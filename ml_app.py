@@ -2,7 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from palmerpenguins import load_penguins
 from sklearn.model_selection import train_test_split
 from sklearn.decomposition import PCA
 from sklearn.svm import SVC
@@ -27,7 +26,6 @@ def load_data():
 
 # 데이터 불러오기
 df = load_data()
-
 
 # Expander (확장자) 사용
 with st.expander('Data'):
